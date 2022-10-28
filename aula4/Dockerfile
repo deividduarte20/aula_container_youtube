@@ -1,6 +1,6 @@
 FROM debian
 
-RUN apt-get update && apt-get install vim curl ansible wget zip  -y
+RUN apt-get update && apt-get install vim curl ansible wget zip git  -y
 RUN curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 RUN chmod 700 get_helm.sh 
 RUN ./get_helm.sh
